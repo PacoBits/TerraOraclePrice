@@ -83,8 +83,10 @@ try:
         LOGGER.hazlog("Inicio programa",1)
 
 
-    SC=["terra1jsxngqasf2zynj5kyh0tgq9mj3zksa5gk35j4k",500,600,"mNetflix"]
-
+    #SC=["terra1jsxngqasf2zynj5kyh0tgq9mj3zksa5gk35j4k",500,600,"mNetflix"]
+    SC=os.getenv("SC").split(",")
+   
+    
     res=QueryApiSubgraph(SC)
 
 
