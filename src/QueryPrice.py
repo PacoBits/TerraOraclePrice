@@ -2,12 +2,11 @@ import requests, json, sys,time,os,traceback
 sys.path.append('class/')
 from ApiRequest import ApiRequest
 from decimal import *
-from excepciones import Error,AddressNovalida,ProblemaNodoETH
+from excepciones import Error
 from logger import logger
 from datetime import datetime
 from dotenv import load_dotenv
-from web3 import Web3, HTTPProvider
-from web3.exceptions import TransactionNotFound,BlockNotFound
+
 
 
 def botTelegram(msg,minutes):
